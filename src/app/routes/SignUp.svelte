@@ -22,7 +22,7 @@
 
 <div class="cards" style="width: 300px; margin: 0px auto;">
     <div class="card">
-        <h5 class="card-header">Sign In</h5>
+        <h5 class="card-header">Sign Up</h5>
         <div class="card-body" style="width: 275px">
             <input id="username-field" type="text" placeholder="Username" bind:value={username}/>
             <label for="username-field">{errorMessageUsername}</label>
@@ -31,7 +31,7 @@
             <label for="password-field">{errorMessagePassword}</label>
         </div>
         <div class="card-footer right">
-            <button on:click={signIn}>Sign In</button>
+            <button on:click={signIn}>Sign Up</button>
         </div>
     </div>
 </div>

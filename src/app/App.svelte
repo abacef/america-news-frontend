@@ -12,7 +12,7 @@
     import Blog from "./routes/Blog.svelte";
     import SignIn from "./routes/SignIn.svelte"
     import NotFound from "./routes/NotFound.svelte";
-    import SignUp from "./routes/sign_up/SignUp.svelte";
+    import SignUp from "./routes/SignUp.svelte";
 
     const routes = {
         '/': Home,
@@ -24,7 +24,6 @@
     }
 
 </script>
-
 
 <NavBar/>
 
