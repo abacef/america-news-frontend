@@ -28,7 +28,7 @@
 
 <NavBar/>
 
-<!-- Where the content of what is rendered shows up -->
+<!-- Where the content of what is rendered for each route shows up -->
 <Router {routes}/>
 
 {#await getGreeting()}
