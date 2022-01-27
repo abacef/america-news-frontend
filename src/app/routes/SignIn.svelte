@@ -21,25 +21,18 @@
 
 </script>
 
-<div style="width: 300px; margin: 0px auto;">
-    Sign In
+<div class="cards" style="width: 300px; margin: 0px auto;">
+    <div class="card">
+        <h5 class="card-header">Sign In</h5>
+        <div class="card-body" style="width: 275px">
+            <input id="username-field" type="text" placeholder="Username" bind:value={username}/>
+            <label for="username-field">{errorMessageUsername}</label>
 
-    <div style="width: 200px">
-        <input id="username-field" type="text" placeholder="Username" bind:value={username}/>
-        <label for="username-field">{errorMessageUsername}</label>
+            <input id="password-field" type="text" placeholder="Password" bind:value={password}/>
+            <label for="password-field">{errorMessagePassword}</label>
+        </div>
+        <div class="card-footer right">
+            <button on:click={signIn}>Sign In</button>
+        </div>
     </div>
-    <br>
-    <div style="width: 200px">
-        <input id="password-field" type="text" placeholder="Password" bind:value={password}/>
-        <label for="password-field">{errorMessagePassword}</label>
-    </div>
-    <br>
-    {serverErrorMessage}
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-            <td align="right">
-                <button disabled={false} on:click={signIn}>Sign In</button>
-            </td>
-        </tr>
-    </table>
 </div>
